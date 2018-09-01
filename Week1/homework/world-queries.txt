@@ -208,7 +208,7 @@ mysql> SELECT country.Name, countrylanguage.Language FROM country INNER JOIN cou
 
 9. What are the languages spoken on all cities named ‘Barcelona’ (you may need to join 3 tables =) )
 
-mysql> SELECT countrylanguage.Language FROM city INNER JOIN countrylanguage ON city.CountryCode = countrylanguage.CountryCode WHERE city.Name = 'Barcelona';
+mysql> SELECT DISTINCT countrylanguage.Language FROM city INNER JOIN countrylanguage ON city.CountryCode = countrylanguage.CountryCode WHERE city.Name = 'Barcelona';
 +----------+
 | Language |
 +----------+
