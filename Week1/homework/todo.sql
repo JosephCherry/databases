@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS `ToDoList`;
+
+CREATE TABLE `ToDoList` (
+`ID` INT(11) NOT NULL AUTO_INCREMENT,
+PRIMARY KEY (`ID`), 
+`TASK` char(255)  NOT NULL,
+`TAG` char(255), 
+`STATUS` char(255) NOT NULL default 'Incomplete'
+)
