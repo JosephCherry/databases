@@ -1,3 +1,4 @@
+ALTER USER 'todo'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 DROP database IF EXISTS todo_app;
 CREATE database todo_app;
 USE todo_app;
